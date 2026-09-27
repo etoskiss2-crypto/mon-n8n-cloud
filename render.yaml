@@ -5,14 +5,14 @@ services:
     plan: free
     envVars:
       - key: N8N_PORT
-        value: 10000
-      - key: GENERIC_TIMEZONE
-        value: "Africa/Porto-Novo"
-      - key: N8N_ENCRYPTION_KEY
-        generateValue: true
-      - key: DB_TYPE
-        value: "sqlite"
+        value: 5678
       - key: N8N_HOST
-        value: "0.0.0.0"
+        value: 0.0.0.0
+      - key: N8N_PROTOCOL
+        value: https
       - key: WEBHOOK_URL
-        value: https://n8n-cloud.onrender.com"
+        value: https://n8n-cloud.onrender.com
+      - key: GENERIC_TIMEZONE
+        value: Africa/Porto-Novo
+      - key: N8N_ENCRYPTION_KEY
+        value: MaCleSecrete2024
