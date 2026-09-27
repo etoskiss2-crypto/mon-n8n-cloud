@@ -1,8 +1,10 @@
 services:
   - type: web
     name: n8n-cloud
-    env: docker
+    env: node
     plan: free
+    buildCommand: npm install -g n8n
+    startCommand: n8n start
     envVars:
       - key: N8N_PORT
         value: 5678
