@@ -1,10 +1,10 @@
 services:
   - type: web
     name: n8n-cloud
-    env: node
+    env: docker
     plan: free
-    buildCommand: npm install -g n8n
-    startCommand: n8n start
+    image:
+      url: docker.io/n8nio/n8n:latest
     envVars:
       - key: N8N_PORT
         value: 5678
@@ -17,4 +17,4 @@ services:
       - key: GENERIC_TIMEZONE
         value: Africa/Porto-Novo
       - key: N8N_ENCRYPTION_KEY
-        value: MaCleSecrete2024
+        value: MaCleSecrete2024 
